@@ -14,6 +14,9 @@
 		C30B64101D10D23D00E77886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30B640E1D10D23D00E77886 /* LaunchScreen.storyboard */; };
 		C30B641B1D10D23D00E77886 /* battle_men_gameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B641A1D10D23D00E77886 /* battle_men_gameTests.swift */; };
 		C30B64261D10D23D00E77886 /* battle_men_gameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B64251D10D23D00E77886 /* battle_men_gameUITests.swift */; };
+		C30B64341D11A5F100E77886 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B64331D11A5F100E77886 /* Character.swift */; settings = {ASSET_TAGS = (); }; };
+		C30B64361D11A76A00E77886 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B64351D11A76A00E77886 /* Player.swift */; settings = {ASSET_TAGS = (); }; };
+		C30B64381D11A88400E77886 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B64371D11A88400E77886 /* Enemy.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		C30B64211D10D23D00E77886 /* battle-men-gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "battle-men-gameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30B64251D10D23D00E77886 /* battle_men_gameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = battle_men_gameUITests.swift; sourceTree = "<group>"; };
 		C30B64271D10D23D00E77886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C30B64331D11A5F100E77886 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		C30B64351D11A76A00E77886 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		C30B64371D11A88400E77886 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				C30B640C1D10D23D00E77886 /* Assets.xcassets */,
 				C30B640E1D10D23D00E77886 /* LaunchScreen.storyboard */,
 				C30B64111D10D23D00E77886 /* Info.plist */,
+				C30B64331D11A5F100E77886 /* Character.swift */,
+				C30B64351D11A76A00E77886 /* Player.swift */,
+				C30B64371D11A88400E77886 /* Enemy.swift */,
 			);
 			path = "battle-men-game";
 			sourceTree = "<group>";
@@ -255,6 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C30B64361D11A76A00E77886 /* Player.swift in Sources */,
+				C30B64381D11A88400E77886 /* Enemy.swift in Sources */,
+				C30B64341D11A5F100E77886 /* Character.swift in Sources */,
 				C30B64081D10D23D00E77886 /* ViewController.swift in Sources */,
 				C30B64061D10D23D00E77886 /* AppDelegate.swift in Sources */,
 			);
