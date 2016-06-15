@@ -61,6 +61,9 @@ class ViewController: UIViewController {
         if enemy.attemptAttack(player.attackPwr) {
             printLbl.text = "Attacked \(enemy.name) for \(player.attackPwr) hp"
             enemyAttackLbl.text = "\(enemy.hp) hp"
+            
+            disablePlayerAttackBtn()
+            
         } else {
             printLbl.text = "Attack was unsuccessful"
         }
@@ -75,6 +78,17 @@ class ViewController: UIViewController {
     func enableEnemyAttackBtn() {
         enemyAttackBtn.enabled = true
     }
+    
+    func disablePlayerAttackBtn() {
+        playerAttackBtn.enabled = false
+        NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "enablePlayerAttackBtn", userInfo: nil, repeats: false)
+        
+    }
+    
+    func enablePlayerAttackBtn() {
+        playerAttackBtn.enabled = true
+    }
+    
     
     
 }
