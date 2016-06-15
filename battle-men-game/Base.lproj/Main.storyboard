@@ -89,16 +89,62 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3x-3X-pYo" userLabel="p1AttackBtn">
+                                <rect key="frame" x="41" y="234" width="153" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="8ty-cp-8g4"/>
+                                    <constraint firstAttribute="height" constant="62" id="CbB-by-1AO"/>
+                                </constraints>
+                                <state key="normal" image="player1attackbtn"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8ty-cp-8g4"/>
+                                        <exclude reference="CbB-by-1AO"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFW-oo-kd0" userLabel="p2AttackBtn">
+                                <rect key="frame" x="407" y="234" width="153" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="8sd-JT-cxJ"/>
+                                    <constraint firstAttribute="height" constant="62" id="b0V-mj-aXY"/>
+                                </constraints>
+                                <state key="normal" image="player2attackbtn"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8sd-JT-cxJ"/>
+                                        <exclude reference="b0V-mj-aXY"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="ATTACK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlL-Ik-0xx">
+                                <rect key="frame" x="77" y="254" width="70" height="21"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="ATTACK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HO0-uS-Tcs">
+                                <rect key="frame" x="442" y="253" width="81" height="21"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0v2-Dr-b75" firstAttribute="centerX" secondItem="uff-um-bHR" secondAttribute="centerX" id="6iL-UB-0xk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZdU-lm-nqt" secondAttribute="trailing" constant="-32" id="CfO-zd-b1l"/>
                             <constraint firstAttribute="trailing" secondItem="ZdU-lm-nqt" secondAttribute="trailing" id="CqP-5y-UNg"/>
+                            <constraint firstItem="NlL-Ik-0xx" firstAttribute="centerY" secondItem="l3x-3X-pYo" secondAttribute="centerY" id="D0e-LV-4EK"/>
                             <constraint firstItem="ho9-1r-0D0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Gx0-xJ-mCc"/>
                             <constraint firstItem="2NK-q7-fzI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="I1Z-zP-cOC"/>
                             <constraint firstItem="ZdU-lm-nqt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KCk-pf-dIE"/>
+                            <constraint firstItem="gFW-oo-kd0" firstAttribute="baseline" secondItem="l3x-3X-pYo" secondAttribute="baseline" id="LE0-8c-DNz"/>
+                            <constraint firstItem="ho9-1r-0D0" firstAttribute="top" secondItem="gFW-oo-kd0" secondAttribute="bottom" constant="42" id="M46-7h-INu"/>
+                            <constraint firstItem="l3x-3X-pYo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="NCU-C9-hft"/>
                             <constraint firstItem="Ws0-Ff-bfr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NMv-WO-hFu"/>
+                            <constraint firstItem="NlL-Ik-0xx" firstAttribute="centerX" secondItem="l3x-3X-pYo" secondAttribute="centerX" id="NTI-wQ-vyw"/>
+                            <constraint firstItem="HO0-uS-Tcs" firstAttribute="centerX" secondItem="gFW-oo-kd0" secondAttribute="centerX" id="OhT-DQ-ugp"/>
                             <constraint firstAttribute="trailing" secondItem="2NK-q7-fzI" secondAttribute="trailing" id="RU6-iH-oOP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ws0-Ff-bfr" secondAttribute="bottom" constant="68" id="Wa7-UK-3Ut"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uff-um-bHR" secondAttribute="bottom" constant="11" id="YuB-Zk-g1e"/>
@@ -109,15 +155,22 @@
                             <constraint firstItem="uff-um-bHR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hWy-Oe-52q"/>
                             <constraint firstItem="Ws0-Ff-bfr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="jOk-N6-HhV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ho9-1r-0D0" secondAttribute="bottom" constant="68" id="kct-St-XUc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gFW-oo-kd0" secondAttribute="trailing" constant="20" id="mA3-zZ-h3C"/>
+                            <constraint firstItem="Ws0-Ff-bfr" firstAttribute="top" secondItem="l3x-3X-pYo" secondAttribute="bottom" constant="42" id="mSH-AI-4mC"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2NK-q7-fzI" secondAttribute="bottom" id="nQT-sT-Mdi"/>
                             <constraint firstItem="ZdU-lm-nqt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-25" id="rEO-rR-aCh"/>
+                            <constraint firstItem="HO0-uS-Tcs" firstAttribute="centerY" secondItem="gFW-oo-kd0" secondAttribute="centerY" id="rsh-ym-7K3"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uff-um-bHR" secondAttribute="bottom" constant="8" id="vwr-rI-j87"/>
                             <constraint firstAttribute="bottom" secondItem="ZdU-lm-nqt" secondAttribute="bottom" constant="7" id="xu1-SG-vzE"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ws0-Ff-bfr" secondAttribute="bottom" constant="68" id="yee-nN-J3O"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="NCU-C9-hft"/>
                                 <exclude reference="jOk-N6-HhV"/>
+                                <exclude reference="mSH-AI-4mC"/>
+                                <exclude reference="mA3-zZ-h3C"/>
+                                <exclude reference="M46-7h-INu"/>
                                 <exclude reference="CqP-5y-UNg"/>
                                 <exclude reference="KCk-pf-dIE"/>
                                 <exclude reference="xu1-SG-vzE"/>
@@ -138,6 +191,8 @@
         <image name="enemy" width="241" height="348"/>
         <image name="ground" width="1024" height="106"/>
         <image name="player" width="406" height="441"/>
+        <image name="player1attackbtn" width="212" height="78"/>
+        <image name="player2attackbtn" width="212" height="78"/>
         <image name="text-holder" width="696" height="106"/>
     </resources>
 </document>
