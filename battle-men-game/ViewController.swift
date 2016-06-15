@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var enemyAttackLbl: UILabel!
+    
+    @IBOutlet weak var playerAttackLbl: UILabel!
+    
+    @IBOutlet weak var enemyImg: UIImageView!
+    
+    @IBOutlet weak var playerImg: UIImageView!
+    
+    @IBOutlet weak var printLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

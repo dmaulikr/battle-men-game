@@ -125,10 +125,18 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TD1-CD-osk">
+                                <rect key="frame" x="134" y="228" width="338" height="47"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="45"/>
+                                <state key="normal" title="Restart Game">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0v2-Dr-b75" firstAttribute="centerX" secondItem="uff-um-bHR" secondAttribute="centerX" id="6iL-UB-0xk"/>
+                            <constraint firstItem="TD1-CD-osk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BfE-gu-gad"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZdU-lm-nqt" secondAttribute="trailing" constant="-32" id="CfO-zd-b1l"/>
                             <constraint firstAttribute="trailing" secondItem="ZdU-lm-nqt" secondAttribute="trailing" id="CqP-5y-UNg"/>
                             <constraint firstItem="ho9-1r-0D0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Gx0-xJ-mCc"/>
@@ -142,6 +150,7 @@
                             <constraint firstAttribute="trailing" secondItem="2NK-q7-fzI" secondAttribute="trailing" id="RU6-iH-oOP"/>
                             <constraint firstItem="DRj-ng-iu5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="6" id="Sqb-Z3-FO6"/>
                             <constraint firstItem="GZi-wB-UO2" firstAttribute="centerX" secondItem="DRj-ng-iu5" secondAttribute="centerX" id="VZC-TC-Teb"/>
+                            <constraint firstItem="TD1-CD-osk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W6g-gm-MjM"/>
                             <constraint firstItem="GZi-wB-UO2" firstAttribute="centerY" secondItem="DRj-ng-iu5" secondAttribute="centerY" id="WDi-mT-Ce0"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ws0-Ff-bfr" secondAttribute="bottom" constant="68" id="Wa7-UK-3Ut"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uff-um-bHR" secondAttribute="bottom" constant="11" id="YuB-Zk-g1e"/>
@@ -175,6 +184,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="enemyAttackLbl" destination="GZi-wB-UO2" id="tY6-eP-9eu"/>
+                        <outlet property="enemyImg" destination="Ws0-Ff-bfr" id="JRC-UF-lEo"/>
+                        <outlet property="playerAttackLbl" destination="cnF-zt-77p" id="eL7-OP-dNP"/>
+                        <outlet property="playerImg" destination="ho9-1r-0D0" id="2hE-jD-ESH"/>
+                        <outlet property="printLbl" destination="0v2-Dr-b75" id="5yd-bJ-Gea"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
