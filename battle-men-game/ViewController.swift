@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     //Outlets
-
+    
     @IBOutlet weak var enemyAttackLbl: UILabel!
     
     @IBOutlet weak var playerAttackLbl: UILabel!
@@ -22,6 +22,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var printLbl: UILabel!
     
+    @IBOutlet weak var enemyAttackBtn: UIButton!
+    
+    @IBOutlet weak var playerAttackBtn: UIButton!
     //Characters
     
     var player = Player(startingHp: 100, attackPwr: 10, name: "Good Dude")
@@ -33,15 +36,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         printLbl.text = "\(enemy.name) vs. \(player.name)! Attack!"
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func restartGameBtn(sender: AnyObject) {
     }
-
+    
     @IBAction func enemyAttackBtn(sender: AnyObject) {
         if player.attemptAttack(enemy.attackPwr) {
             printLbl.text = "Attacked \(player.name) for \(enemy.attackPwr) hp"
@@ -60,6 +63,5 @@ class ViewController: UIViewController {
         }
     }
     
-
+    
 }
-

@@ -73,7 +73,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="enemyAttackBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xDu-bL-t0V"/>
+                                    <action selector="enemyAttackBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wfq-xj-fXu"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ATTACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZi-wB-UO2" userLabel="p1AttackLbl">
@@ -122,7 +122,7 @@
                                 </constraints>
                                 <state key="normal" image="player2attackbtn"/>
                                 <connections>
-                                    <action selector="playerAttackBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dK7-sz-ppk"/>
+                                    <action selector="playerAttackBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k5C-kX-YAW"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ATTACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnF-zt-77p" userLabel="p2AttackLbl">
@@ -194,8 +194,10 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="enemyAttackBtn" destination="DRj-ng-iu5" id="C0I-DU-lSM"/>
                         <outlet property="enemyAttackLbl" destination="GZi-wB-UO2" id="tY6-eP-9eu"/>
                         <outlet property="enemyImg" destination="Ws0-Ff-bfr" id="JRC-UF-lEo"/>
+                        <outlet property="playerAttackBtn" destination="wVj-FP-DcA" id="tKR-PR-Bw8"/>
                         <outlet property="playerAttackLbl" destination="cnF-zt-77p" id="eL7-OP-dNP"/>
                         <outlet property="playerImg" destination="ho9-1r-0D0" id="2hE-jD-ESH"/>
                         <outlet property="printLbl" destination="0v2-Dr-b75" id="5yd-bJ-Gea"/>
