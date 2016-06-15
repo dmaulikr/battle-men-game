@@ -138,7 +138,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="restartGameBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aSZ-Sb-Xud"/>
+                                    <action selector="restartGameBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5wq-N9-MCL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -201,6 +201,7 @@
                         <outlet property="playerAttackLbl" destination="cnF-zt-77p" id="eL7-OP-dNP"/>
                         <outlet property="playerImg" destination="ho9-1r-0D0" id="2hE-jD-ESH"/>
                         <outlet property="printLbl" destination="0v2-Dr-b75" id="5yd-bJ-Gea"/>
+                        <outlet property="restartGameBtn" destination="TD1-CD-osk" id="cOG-VY-91K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

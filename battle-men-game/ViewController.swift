@@ -25,6 +25,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var enemyAttackBtn: UIButton!
     
     @IBOutlet weak var playerAttackBtn: UIButton!
+    
+    @IBOutlet weak var restartGameBtn: UIButton!
     //Characters
     
     var player = Player(startingHp: 100, attackPwr: 10, name: "Good Dude")
@@ -42,7 +44,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func restartGameBtn(sender: AnyObject) {
+    @IBAction func restartGameBtnTapped(sender: AnyObject) {
+        enemyAttackLbl.text = "Attack!"
+        playerAttackLbl.text = "Attack!"
+        restartGameBtn.hidden = true
+        enemyImg.hidden = false
+        playerImg.hidden = false
+        player = Player(startingHp: 100, attackPwr: 10, name: "Good Dude")
+        enemy = Enemy(startingHp: 100, attackPwr: 10, name: "Bad Dude")
+        printLbl.text = "\(enemy.name) vs. \(player.name)! Attack!"
+        
+        
     }
     
     //Enemy controls
@@ -66,6 +78,7 @@ class ViewController: UIViewController {
             playerImg.hidden = true
             playerAttackLbl.text = "Game Over!"
             enemyAttackLbl.text = "You Won!"
+            restartGameBtn.hidden = false
         }
     }
     
@@ -90,6 +103,7 @@ class ViewController: UIViewController {
             enemyImg.hidden = true
             playerAttackLbl.text = "You won!"
             enemyAttackLbl.text = "Game Over!"
+            restartGameBtn.hidden = false
             
         }
     }
