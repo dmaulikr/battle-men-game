@@ -24,14 +24,14 @@ class ViewController: UIViewController {
     
     //Characters
     
-    var player = Player(startingHp: 200, attackPwr: 10, name: "Good Dude")
-    var enemy = Enemy(startingHp: 200, attackPwr: 10, name: "Bad Dude")
+    var player = Player(startingHp: 100, attackPwr: 10, name: "Good Dude")
+    var enemy = Enemy(startingHp: 100, attackPwr: 10, name: "Bad Dude")
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        printLbl.text = "\(enemy.name) vs. \(player.name)! Attack!"
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,18 +43,23 @@ class ViewController: UIViewController {
     }
 
     @IBAction func enemyAttackBtn(sender: AnyObject) {
+        if player.attemptAttack(enemy.attackPwr) {
+            printLbl.text = "Attacked \(player.name) for \(enemy.attackPwr) hp"
+            playerAttackLbl.text = "\(player.hp) hp"
+        } else {
+            printLbl.text = "Attack was unsuccessful"
+        }
     }
     
     @IBAction func playerAttackBtn(sender: AnyObject) {
+        if enemy.attemptAttack(player.attackPwr) {
+            printLbl.text = "Attacked \(enemy.name) for \(player.attackPwr) hp"
+            enemyAttackLbl.text = "\(enemy.hp) hp"
+        } else {
+            printLbl.text = "Attack was unsuccessful"
+        }
     }
     
-//    func isGameOver() {
-//        if !isAlive {
-//           gameOverBtn.hidden = false
-//            
-//        } else {
-//            gameOverBtn.hidden = true
-//        }
-//    }
+
 }
 
