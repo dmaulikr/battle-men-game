@@ -17,6 +17,7 @@
 		C30B64341D11A5F100E77886 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B64331D11A5F100E77886 /* Character.swift */; settings = {ASSET_TAGS = (); }; };
 		C30B64361D11A76A00E77886 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B64351D11A76A00E77886 /* Player.swift */; settings = {ASSET_TAGS = (); }; };
 		C30B64381D11A88400E77886 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B64371D11A88400E77886 /* Enemy.swift */; settings = {ASSET_TAGS = (); }; };
+		C312BFBF1D11D0A70004D5DA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C312BFBE1D11D0A70004D5DA /* README.md */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C30B64331D11A5F100E77886 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		C30B64351D11A76A00E77886 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		C30B64371D11A88400E77886 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		C312BFBE1D11D0A70004D5DA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				C30B64331D11A5F100E77886 /* Character.swift */,
 				C30B64351D11A76A00E77886 /* Player.swift */,
 				C30B64371D11A88400E77886 /* Enemy.swift */,
+				C312BFBE1D11D0A70004D5DA /* README.md */,
 			);
 			path = "battle-men-game";
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C312BFBF1D11D0A70004D5DA /* README.md in Sources */,
 				C30B64361D11A76A00E77886 /* Player.swift in Sources */,
 				C30B64381D11A88400E77886 /* Enemy.swift in Sources */,
 				C30B64341D11A5F100E77886 /* Character.swift in Sources */,
@@ -493,6 +497,7 @@
 				C30B642C1D10D23D00E77886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C30B642D1D10D23D00E77886 /* Build configuration list for PBXNativeTarget "battle-men-gameTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +506,7 @@
 				C30B642F1D10D23D00E77886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C30B64301D10D23D00E77886 /* Build configuration list for PBXNativeTarget "battle-men-gameUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +515,7 @@
 				C30B64321D10D23D00E77886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
