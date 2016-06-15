@@ -72,6 +72,9 @@
                                         <exclude reference="Vvu-hJ-jFQ"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="enemyAttackBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xDu-bL-t0V"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ATTACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZi-wB-UO2" userLabel="p1AttackLbl">
                                 <rect key="frame" x="64" y="28" width="97" height="21"/>
@@ -118,6 +121,9 @@
                                     <constraint firstAttribute="height" constant="65" id="tOe-gt-ker"/>
                                 </constraints>
                                 <state key="normal" image="player2attackbtn"/>
+                                <connections>
+                                    <action selector="playerAttackBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dK7-sz-ppk"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ATTACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnF-zt-77p" userLabel="p2AttackLbl">
                                 <rect key="frame" x="435" y="28" width="97" height="21"/>
@@ -125,12 +131,15 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TD1-CD-osk">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TD1-CD-osk">
                                 <rect key="frame" x="134" y="228" width="338" height="47"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="45"/>
                                 <state key="normal" title="Restart Game">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="restartGameBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aSZ-Sb-Xud"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

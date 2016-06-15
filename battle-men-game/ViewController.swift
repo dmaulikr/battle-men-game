@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //Outlets
 
     @IBOutlet weak var enemyAttackLbl: UILabel!
     
@@ -20,9 +22,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var printLbl: UILabel!
     
+    //Characters
+    
+    var player = Player(startingHp: 200, attackPwr: 10, name: "Good Dude")
+    var enemy = Enemy(startingHp: 200, attackPwr: 10, name: "Bad Dude")
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +39,22 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func restartGameBtn(sender: AnyObject) {
+    }
 
+    @IBAction func enemyAttackBtn(sender: AnyObject) {
+    }
+    
+    @IBAction func playerAttackBtn(sender: AnyObject) {
+    }
+    
+//    func isGameOver() {
+//        if !isAlive {
+//           gameOverBtn.hidden = false
+//            
+//        } else {
+//            gameOverBtn.hidden = true
+//        }
+//    }
 }
 

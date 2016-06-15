@@ -12,6 +12,7 @@ class Character {
     
     private var _hp: Int = 200
     private var _attackPwr: Int = 10
+    private var _name: String
     
     var attackPwr: Int {
         get {
@@ -25,6 +26,12 @@ class Character {
         }
     }
     
+    var name: String {
+        get {
+            return _name
+        }
+    }
+    
     var isAlive: Bool {
         get {
             if hp <= 0 {
@@ -35,9 +42,10 @@ class Character {
         }
     }
     
-    init(startingHp: Int, attackPwr: Int) {
+    init(startingHp: Int, attackPwr: Int, name: String) {
         self._hp = startingHp
         self._attackPwr = attackPwr
+        self._name = name
         
     }
     
