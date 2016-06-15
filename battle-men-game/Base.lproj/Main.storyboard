@@ -38,6 +38,47 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text-holder" translatesAutoresizingMaskIntoConstraints="NO" id="uff-um-bHR">
+                                <rect key="frame" x="170" y="540" width="261" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="2xG-vw-Us8"/>
+                                    <constraint firstAttribute="width" constant="261" id="SNQ-yZ-YQC"/>
+                                    <constraint firstAttribute="height" constant="49" id="hoY-xT-wjG"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hoY-xT-wjG"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0v2-Dr-b75" userLabel="printLbl">
+                                <rect key="frame" x="183" y="554" width="236" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRj-ng-iu5" userLabel="p1AttackBtn">
+                                <rect key="frame" x="29" y="6" width="177" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="177" id="U7V-Rr-sxu"/>
+                                    <constraint firstAttribute="height" constant="65" id="Vvu-hJ-jFQ"/>
+                                    <constraint firstAttribute="height" constant="65" id="eaQ-6c-UiT"/>
+                                    <constraint firstAttribute="width" constant="177" id="kUS-xa-8F5"/>
+                                </constraints>
+                                <state key="normal" image="player1attackbtn"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="U7V-Rr-sxu"/>
+                                        <exclude reference="Vvu-hJ-jFQ"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ATTACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZi-wB-UO2" userLabel="p1AttackLbl">
+                                <rect key="frame" x="64" y="28" width="97" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="Ws0-Ff-bfr">
                                 <rect key="frame" x="20" y="338" width="194" height="194"/>
                                 <constraints>
@@ -70,62 +111,17 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text-holder" translatesAutoresizingMaskIntoConstraints="NO" id="uff-um-bHR">
-                                <rect key="frame" x="170" y="540" width="261" height="49"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVj-FP-DcA" userLabel="p2AttackBtn">
+                                <rect key="frame" x="395" y="6" width="177" height="65"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="2xG-vw-Us8"/>
-                                    <constraint firstAttribute="width" constant="261" id="SNQ-yZ-YQC"/>
-                                    <constraint firstAttribute="height" constant="49" id="hoY-xT-wjG"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="hoY-xT-wjG"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0v2-Dr-b75">
-                                <rect key="frame" x="183" y="554" width="236" height="26"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3x-3X-pYo" userLabel="p1AttackBtn">
-                                <rect key="frame" x="41" y="234" width="153" height="62"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="153" id="8ty-cp-8g4"/>
-                                    <constraint firstAttribute="height" constant="62" id="CbB-by-1AO"/>
-                                </constraints>
-                                <state key="normal" image="player1attackbtn"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="8ty-cp-8g4"/>
-                                        <exclude reference="CbB-by-1AO"/>
-                                    </mask>
-                                </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFW-oo-kd0" userLabel="p2AttackBtn">
-                                <rect key="frame" x="407" y="234" width="153" height="62"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="153" id="8sd-JT-cxJ"/>
-                                    <constraint firstAttribute="height" constant="62" id="b0V-mj-aXY"/>
+                                    <constraint firstAttribute="width" constant="177" id="064-7x-gv5"/>
+                                    <constraint firstAttribute="height" constant="65" id="tOe-gt-ker"/>
                                 </constraints>
                                 <state key="normal" image="player2attackbtn"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="8sd-JT-cxJ"/>
-                                        <exclude reference="b0V-mj-aXY"/>
-                                    </mask>
-                                </variation>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="ATTACK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlL-Ik-0xx">
-                                <rect key="frame" x="77" y="254" width="70" height="21"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="ATTACK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HO0-uS-Tcs">
-                                <rect key="frame" x="442" y="253" width="81" height="21"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ATTACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnF-zt-77p" userLabel="p2AttackLbl">
+                                <rect key="frame" x="435" y="28" width="97" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="22"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -135,17 +131,18 @@
                             <constraint firstItem="0v2-Dr-b75" firstAttribute="centerX" secondItem="uff-um-bHR" secondAttribute="centerX" id="6iL-UB-0xk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZdU-lm-nqt" secondAttribute="trailing" constant="-32" id="CfO-zd-b1l"/>
                             <constraint firstAttribute="trailing" secondItem="ZdU-lm-nqt" secondAttribute="trailing" id="CqP-5y-UNg"/>
-                            <constraint firstItem="NlL-Ik-0xx" firstAttribute="centerY" secondItem="l3x-3X-pYo" secondAttribute="centerY" id="D0e-LV-4EK"/>
                             <constraint firstItem="ho9-1r-0D0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Gx0-xJ-mCc"/>
                             <constraint firstItem="2NK-q7-fzI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="I1Z-zP-cOC"/>
+                            <constraint firstItem="cnF-zt-77p" firstAttribute="centerX" secondItem="wVj-FP-DcA" secondAttribute="centerX" id="JDi-c3-exa"/>
+                            <constraint firstItem="DRj-ng-iu5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="JLE-Pe-GhE"/>
                             <constraint firstItem="ZdU-lm-nqt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KCk-pf-dIE"/>
-                            <constraint firstItem="gFW-oo-kd0" firstAttribute="baseline" secondItem="l3x-3X-pYo" secondAttribute="baseline" id="LE0-8c-DNz"/>
-                            <constraint firstItem="ho9-1r-0D0" firstAttribute="top" secondItem="gFW-oo-kd0" secondAttribute="bottom" constant="42" id="M46-7h-INu"/>
-                            <constraint firstItem="l3x-3X-pYo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="NCU-C9-hft"/>
                             <constraint firstItem="Ws0-Ff-bfr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NMv-WO-hFu"/>
-                            <constraint firstItem="NlL-Ik-0xx" firstAttribute="centerX" secondItem="l3x-3X-pYo" secondAttribute="centerX" id="NTI-wQ-vyw"/>
-                            <constraint firstItem="HO0-uS-Tcs" firstAttribute="centerX" secondItem="gFW-oo-kd0" secondAttribute="centerX" id="OhT-DQ-ugp"/>
+                            <constraint firstItem="cnF-zt-77p" firstAttribute="centerY" secondItem="wVj-FP-DcA" secondAttribute="centerY" id="QdX-mZ-i3D"/>
+                            <constraint firstItem="DRj-ng-iu5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="QvL-UK-QP7"/>
                             <constraint firstAttribute="trailing" secondItem="2NK-q7-fzI" secondAttribute="trailing" id="RU6-iH-oOP"/>
+                            <constraint firstItem="DRj-ng-iu5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="6" id="Sqb-Z3-FO6"/>
+                            <constraint firstItem="GZi-wB-UO2" firstAttribute="centerX" secondItem="DRj-ng-iu5" secondAttribute="centerX" id="VZC-TC-Teb"/>
+                            <constraint firstItem="GZi-wB-UO2" firstAttribute="centerY" secondItem="DRj-ng-iu5" secondAttribute="centerY" id="WDi-mT-Ce0"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ws0-Ff-bfr" secondAttribute="bottom" constant="68" id="Wa7-UK-3Ut"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uff-um-bHR" secondAttribute="bottom" constant="11" id="YuB-Zk-g1e"/>
                             <constraint firstAttribute="bottomMargin" secondItem="ZdU-lm-nqt" secondAttribute="bottom" constant="-7" id="aYa-XU-nXJ"/>
@@ -154,23 +151,21 @@
                             <constraint firstItem="0v2-Dr-b75" firstAttribute="centerY" secondItem="uff-um-bHR" secondAttribute="centerY" id="hCa-ox-jyv"/>
                             <constraint firstItem="uff-um-bHR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hWy-Oe-52q"/>
                             <constraint firstItem="Ws0-Ff-bfr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="jOk-N6-HhV"/>
+                            <constraint firstItem="wVj-FP-DcA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="6" id="kPn-BV-CcG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ho9-1r-0D0" secondAttribute="bottom" constant="68" id="kct-St-XUc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gFW-oo-kd0" secondAttribute="trailing" constant="20" id="mA3-zZ-h3C"/>
-                            <constraint firstItem="Ws0-Ff-bfr" firstAttribute="top" secondItem="l3x-3X-pYo" secondAttribute="bottom" constant="42" id="mSH-AI-4mC"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2NK-q7-fzI" secondAttribute="bottom" id="nQT-sT-Mdi"/>
                             <constraint firstItem="ZdU-lm-nqt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-25" id="rEO-rR-aCh"/>
-                            <constraint firstItem="HO0-uS-Tcs" firstAttribute="centerY" secondItem="gFW-oo-kd0" secondAttribute="centerY" id="rsh-ym-7K3"/>
+                            <constraint firstItem="DRj-ng-iu5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="taj-LE-C2M"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uff-um-bHR" secondAttribute="bottom" constant="8" id="vwr-rI-j87"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wVj-FP-DcA" secondAttribute="trailing" constant="8" id="x3A-4d-q78"/>
                             <constraint firstAttribute="bottom" secondItem="ZdU-lm-nqt" secondAttribute="bottom" constant="7" id="xu1-SG-vzE"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ws0-Ff-bfr" secondAttribute="bottom" constant="68" id="yee-nN-J3O"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="NCU-C9-hft"/>
+                                <exclude reference="JLE-Pe-GhE"/>
+                                <exclude reference="QvL-UK-QP7"/>
                                 <exclude reference="jOk-N6-HhV"/>
-                                <exclude reference="mSH-AI-4mC"/>
-                                <exclude reference="mA3-zZ-h3C"/>
-                                <exclude reference="M46-7h-INu"/>
                                 <exclude reference="CqP-5y-UNg"/>
                                 <exclude reference="KCk-pf-dIE"/>
                                 <exclude reference="xu1-SG-vzE"/>
