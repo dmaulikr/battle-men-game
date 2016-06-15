@@ -45,29 +45,57 @@ class ViewController: UIViewController {
     @IBAction func restartGameBtn(sender: AnyObject) {
     }
     
+    //Enemy controls
+    
     @IBAction func enemyAttackBtn(sender: AnyObject) {
         if player.attemptAttack(enemy.attackPwr) {
             printLbl.text = "Attacked \(player.name) for \(enemy.attackPwr) hp"
             playerAttackLbl.text = "\(player.hp) hp"
-            
-            disableEnemyAttackBtn()
-            
-        } else {
-            printLbl.text = "Attack was unsuccessful"
-        }
-    }
-    
-    @IBAction func playerAttackBtn(sender: AnyObject) {
-        if enemy.attemptAttack(player.attackPwr) {
-            printLbl.text = "Attacked \(enemy.name) for \(player.attackPwr) hp"
-            enemyAttackLbl.text = "\(enemy.hp) hp"
             
             disablePlayerAttackBtn()
             
         } else {
             printLbl.text = "Attack was unsuccessful"
         }
+        
+        if !enemy.isAlive {
+            printLbl.text = "\(enemy.name) killed \(player.name)"
+        }
+        if !player.isAlive {
+            printLbl.text = "\(player.name) killed \(enemy.name)"
+            playerImg.hidden = true
+            playerAttackLbl.text = "Game Over!"
+            enemyAttackLbl.text = "You Won!"
+        }
     }
+    
+    //Player controlls
+    
+    @IBAction func playerAttackBtn(sender: AnyObject) {
+        if enemy.attemptAttack(player.attackPwr) {
+            printLbl.text = "Attacked \(enemy.name) for \(player.attackPwr) hp"
+            enemyAttackLbl.text = "\(enemy.hp) hp"
+            
+            disableEnemyAttackBtn()
+            
+        } else {
+            printLbl.text = "Attack was unsuccessful"
+        }
+        
+        if !player.isAlive {
+            printLbl.text = "\(player.name) killed \(enemy.name)"
+        }
+        if !enemy.isAlive {
+            printLbl.text = "\(enemy.name) killed \(player.name)"
+            enemyImg.hidden = true
+            playerAttackLbl.text = "You won!"
+            enemyAttackLbl.text = "Game Over!"
+            
+        }
+    }
+    
+    
+    // Timer functions
     
     func disableEnemyAttackBtn() {
         enemyAttackBtn.enabled = false
@@ -81,7 +109,7 @@ class ViewController: UIViewController {
     
     func disablePlayerAttackBtn() {
         playerAttackBtn.enabled = false
-        NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "enablePlayerAttackBtn", userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "enablePlayerAttackBtn", userInfo: nil, repeats: false)
         
     }
     
