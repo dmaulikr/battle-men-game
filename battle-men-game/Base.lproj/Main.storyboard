@@ -70,9 +70,29 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text-holder" translatesAutoresizingMaskIntoConstraints="NO" id="uff-um-bHR">
+                                <rect key="frame" x="170" y="540" width="261" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="2xG-vw-Us8"/>
+                                    <constraint firstAttribute="width" constant="261" id="SNQ-yZ-YQC"/>
+                                    <constraint firstAttribute="height" constant="49" id="hoY-xT-wjG"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hoY-xT-wjG"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0v2-Dr-b75">
+                                <rect key="frame" x="183" y="554" width="236" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="0v2-Dr-b75" firstAttribute="centerX" secondItem="uff-um-bHR" secondAttribute="centerX" id="6iL-UB-0xk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZdU-lm-nqt" secondAttribute="trailing" constant="-32" id="CfO-zd-b1l"/>
                             <constraint firstAttribute="trailing" secondItem="ZdU-lm-nqt" secondAttribute="trailing" id="CqP-5y-UNg"/>
                             <constraint firstItem="ho9-1r-0D0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Gx0-xJ-mCc"/>
@@ -81,12 +101,17 @@
                             <constraint firstItem="Ws0-Ff-bfr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NMv-WO-hFu"/>
                             <constraint firstAttribute="trailing" secondItem="2NK-q7-fzI" secondAttribute="trailing" id="RU6-iH-oOP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ws0-Ff-bfr" secondAttribute="bottom" constant="68" id="Wa7-UK-3Ut"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uff-um-bHR" secondAttribute="bottom" constant="11" id="YuB-Zk-g1e"/>
                             <constraint firstAttribute="bottomMargin" secondItem="ZdU-lm-nqt" secondAttribute="bottom" constant="-7" id="aYa-XU-nXJ"/>
                             <constraint firstItem="2NK-q7-fzI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fAu-LI-upz"/>
+                            <constraint firstItem="uff-um-bHR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h08-WB-ryQ"/>
+                            <constraint firstItem="0v2-Dr-b75" firstAttribute="centerY" secondItem="uff-um-bHR" secondAttribute="centerY" id="hCa-ox-jyv"/>
+                            <constraint firstItem="uff-um-bHR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hWy-Oe-52q"/>
                             <constraint firstItem="Ws0-Ff-bfr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="jOk-N6-HhV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ho9-1r-0D0" secondAttribute="bottom" constant="68" id="kct-St-XUc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2NK-q7-fzI" secondAttribute="bottom" id="nQT-sT-Mdi"/>
                             <constraint firstItem="ZdU-lm-nqt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-25" id="rEO-rR-aCh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uff-um-bHR" secondAttribute="bottom" constant="8" id="vwr-rI-j87"/>
                             <constraint firstAttribute="bottom" secondItem="ZdU-lm-nqt" secondAttribute="bottom" constant="7" id="xu1-SG-vzE"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ws0-Ff-bfr" secondAttribute="bottom" constant="68" id="yee-nN-J3O"/>
                         </constraints>
@@ -96,7 +121,9 @@
                                 <exclude reference="CqP-5y-UNg"/>
                                 <exclude reference="KCk-pf-dIE"/>
                                 <exclude reference="xu1-SG-vzE"/>
+                                <exclude reference="hWy-Oe-52q"/>
                                 <exclude reference="Wa7-UK-3Ut"/>
+                                <exclude reference="vwr-rI-j87"/>
                             </mask>
                         </variation>
                     </view>
@@ -111,5 +138,6 @@
         <image name="enemy" width="241" height="348"/>
         <image name="ground" width="1024" height="106"/>
         <image name="player" width="406" height="441"/>
+        <image name="text-holder" width="696" height="106"/>
     </resources>
 </document>
