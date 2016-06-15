@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C30B64061D10D23D00E77886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B64051D10D23D00E77886 /* AppDelegate.swift */; };
+		C30B64081D10D23D00E77886 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B64071D10D23D00E77886 /* ViewController.swift */; };
+		C30B640B1D10D23D00E77886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30B64091D10D23D00E77886 /* Main.storyboard */; };
+		C30B640D1D10D23D00E77886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30B640C1D10D23D00E77886 /* Assets.xcassets */; };
+		C30B64101D10D23D00E77886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30B640E1D10D23D00E77886 /* LaunchScreen.storyboard */; };
+		C30B641B1D10D23D00E77886 /* battle_men_gameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B641A1D10D23D00E77886 /* battle_men_gameTests.swift */; };
+		C30B64261D10D23D00E77886 /* battle_men_gameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B64251D10D23D00E77886 /* battle_men_gameUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C30B64171D10D23D00E77886 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30B63FA1D10D23D00E77886 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C30B64011D10D23D00E77886;
+			remoteInfo = "battle-men-game";
+		};
+		C30B64221D10D23D00E77886 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30B63FA1D10D23D00E77886 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C30B64011D10D23D00E77886;
+			remoteInfo = "battle-men-game";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C30B64021D10D23D00E77886 /* battle-men-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "battle-men-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30B64051D10D23D00E77886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C30B64071D10D23D00E77886 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C30B640A1D10D23D00E77886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C30B640C1D10D23D00E77886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C30B640F1D10D23D00E77886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C30B64111D10D23D00E77886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C30B64161D10D23D00E77886 /* battle-men-gameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "battle-men-gameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30B641A1D10D23D00E77886 /* battle_men_gameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = battle_men_gameTests.swift; sourceTree = "<group>"; };
+		C30B641C1D10D23D00E77886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C30B64211D10D23D00E77886 /* battle-men-gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "battle-men-gameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30B64251D10D23D00E77886 /* battle_men_gameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = battle_men_gameUITests.swift; sourceTree = "<group>"; };
+		C30B64271D10D23D00E77886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C30B63FF1D10D23D00E77886 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30B64131D10D23D00E77886 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30B641E1D10D23D00E77886 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C30B63F91D10D23D00E77886 = {
+			isa = PBXGroup;
+			children = (
+				C30B64041D10D23D00E77886 /* battle-men-game */,
+				C30B64191D10D23D00E77886 /* battle-men-gameTests */,
+				C30B64241D10D23D00E77886 /* battle-men-gameUITests */,
+				C30B64031D10D23D00E77886 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C30B64031D10D23D00E77886 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C30B64021D10D23D00E77886 /* battle-men-game.app */,
+				C30B64161D10D23D00E77886 /* battle-men-gameTests.xctest */,
+				C30B64211D10D23D00E77886 /* battle-men-gameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C30B64041D10D23D00E77886 /* battle-men-game */ = {
+			isa = PBXGroup;
+			children = (
+				C30B64051D10D23D00E77886 /* AppDelegate.swift */,
+				C30B64071D10D23D00E77886 /* ViewController.swift */,
+				C30B64091D10D23D00E77886 /* Main.storyboard */,
+				C30B640C1D10D23D00E77886 /* Assets.xcassets */,
+				C30B640E1D10D23D00E77886 /* LaunchScreen.storyboard */,
+				C30B64111D10D23D00E77886 /* Info.plist */,
+			);
+			path = "battle-men-game";
+			sourceTree = "<group>";
+		};
+		C30B64191D10D23D00E77886 /* battle-men-gameTests */ = {
+			isa = PBXGroup;
+			children = (
+				C30B641A1D10D23D00E77886 /* battle_men_gameTests.swift */,
+				C30B641C1D10D23D00E77886 /* Info.plist */,
+			);
+			path = "battle-men-gameTests";
+			sourceTree = "<group>";
+		};
+		C30B64241D10D23D00E77886 /* battle-men-gameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C30B64251D10D23D00E77886 /* battle_men_gameUITests.swift */,
+				C30B64271D10D23D00E77886 /* Info.plist */,
+			);
+			path = "battle-men-gameUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C30B64011D10D23D00E77886 /* battle-men-game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30B642A1D10D23D00E77886 /* Build configuration list for PBXNativeTarget "battle-men-game" */;
+			buildPhases = (
+				C30B63FE1D10D23D00E77886 /* Sources */,
+				C30B63FF1D10D23D00E77886 /* Frameworks */,
+				C30B64001D10D23D00E77886 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "battle-men-game";
+			productName = "battle-men-game";
+			productReference = C30B64021D10D23D00E77886 /* battle-men-game.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C30B64151D10D23D00E77886 /* battle-men-gameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30B642D1D10D23D00E77886 /* Build configuration list for PBXNativeTarget "battle-men-gameTests" */;
+			buildPhases = (
+				C30B64121D10D23D00E77886 /* Sources */,
+				C30B64131D10D23D00E77886 /* Frameworks */,
+				C30B64141D10D23D00E77886 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C30B64181D10D23D00E77886 /* PBXTargetDependency */,
+			);
+			name = "battle-men-gameTests";
+			productName = "battle-men-gameTests";
+			productReference = C30B64161D10D23D00E77886 /* battle-men-gameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C30B64201D10D23D00E77886 /* battle-men-gameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30B64301D10D23D00E77886 /* Build configuration list for PBXNativeTarget "battle-men-gameUITests" */;
+			buildPhases = (
+				C30B641D1D10D23D00E77886 /* Sources */,
+				C30B641E1D10D23D00E77886 /* Frameworks */,
+				C30B641F1D10D23D00E77886 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C30B64231D10D23D00E77886 /* PBXTargetDependency */,
+			);
+			name = "battle-men-gameUITests";
+			productName = "battle-men-gameUITests";
+			productReference = C30B64211D10D23D00E77886 /* battle-men-gameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C30B63FA1D10D23D00E77886 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Math LLC";
+				TargetAttributes = {
+					C30B64011D10D23D00E77886 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					C30B64151D10D23D00E77886 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = C30B64011D10D23D00E77886;
+					};
+					C30B64201D10D23D00E77886 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = C30B64011D10D23D00E77886;
+					};
+				};
+			};
+			buildConfigurationList = C30B63FD1D10D23D00E77886 /* Build configuration list for PBXProject "battle-men-game" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C30B63F91D10D23D00E77886;
+			productRefGroup = C30B64031D10D23D00E77886 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C30B64011D10D23D00E77886 /* battle-men-game */,
+				C30B64151D10D23D00E77886 /* battle-men-gameTests */,
+				C30B64201D10D23D00E77886 /* battle-men-gameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C30B64001D10D23D00E77886 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30B64101D10D23D00E77886 /* LaunchScreen.storyboard in Resources */,
+				C30B640D1D10D23D00E77886 /* Assets.xcassets in Resources */,
+				C30B640B1D10D23D00E77886 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30B64141D10D23D00E77886 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30B641F1D10D23D00E77886 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C30B63FE1D10D23D00E77886 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30B64081D10D23D00E77886 /* ViewController.swift in Sources */,
+				C30B64061D10D23D00E77886 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30B64121D10D23D00E77886 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30B641B1D10D23D00E77886 /* battle_men_gameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30B641D1D10D23D00E77886 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30B64261D10D23D00E77886 /* battle_men_gameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C30B64181D10D23D00E77886 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C30B64011D10D23D00E77886 /* battle-men-game */;
+			targetProxy = C30B64171D10D23D00E77886 /* PBXContainerItemProxy */;
+		};
+		C30B64231D10D23D00E77886 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C30B64011D10D23D00E77886 /* battle-men-game */;
+			targetProxy = C30B64221D10D23D00E77886 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C30B64091D10D23D00E77886 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C30B640A1D10D23D00E77886 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C30B640E1D10D23D00E77886 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C30B640F1D10D23D00E77886 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C30B64281D10D23D00E77886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C30B64291D10D23D00E77886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C30B642B1D10D23D00E77886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "battle-men-game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.math.battle-men-game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C30B642C1D10D23D00E77886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "battle-men-game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.math.battle-men-game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C30B642E1D10D23D00E77886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "battle-men-gameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.math.battle-men-gameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/battle-men-game.app/battle-men-game";
+			};
+			name = Debug;
+		};
+		C30B642F1D10D23D00E77886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "battle-men-gameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.math.battle-men-gameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/battle-men-game.app/battle-men-game";
+			};
+			name = Release;
+		};
+		C30B64311D10D23D00E77886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "battle-men-gameUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.math.battle-men-gameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "battle-men-game";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C30B64321D10D23D00E77886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "battle-men-gameUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.math.battle-men-gameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "battle-men-game";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C30B63FD1D10D23D00E77886 /* Build configuration list for PBXProject "battle-men-game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30B64281D10D23D00E77886 /* Debug */,
+				C30B64291D10D23D00E77886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30B642A1D10D23D00E77886 /* Build configuration list for PBXNativeTarget "battle-men-game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30B642B1D10D23D00E77886 /* Debug */,
+				C30B642C1D10D23D00E77886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C30B642D1D10D23D00E77886 /* Build configuration list for PBXNativeTarget "battle-men-gameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30B642E1D10D23D00E77886 /* Debug */,
+				C30B642F1D10D23D00E77886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C30B64301D10D23D00E77886 /* Build configuration list for PBXNativeTarget "battle-men-gameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30B64311D10D23D00E77886 /* Debug */,
+				C30B64321D10D23D00E77886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C30B63FA1D10D23D00E77886 /* Project object */;
+}
